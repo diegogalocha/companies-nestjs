@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version",
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch",
+    "publish-to-master": "git push --follow-tags origin master"
   },
   "repository": {
     "type": "git",
@@ -28,6 +33,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
+    "standard-version": "^9.0.0",
     "ts-node": "^9.0.0"
   }
 }
